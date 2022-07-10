@@ -1,0 +1,75 @@
+/* Grandpa's Pet Project | Randall Callihan */
+
+/*
+    --Colors-- 
+    Cerulean: #00ABE1
+    Lucky Point: #161F6D
+
+    */
+
+/* World Styles */
+
+/* Header Styles */
+#headerTitle {
+    text-align: center;
+    background-color: lightgray;
+    border-style: solid;
+    border: 5px solid black;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Body Styles */
+
+/* Footer Styles */
+
+body {
+    margin: 0;
+    font-size: 28px;
+    /*font-family: Arial, Helvetica, sans-serif;*/
+}
+
+.header {
+    background-color: #161F6D;
+    padding: 30px;
+    text-align: center;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: #161F6D;
+}
+
+    #navbar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+        #navbar a:hover {
+            background-color: #b3b3b3;
+            color: black;
+        }
+
+        #navbar a.active {
+            background-color: #00ABE1;
+            color: white;
+        }
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+    .sticky + .content {
+        padding-top: 60px;
+    }

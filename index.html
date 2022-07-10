@@ -27,15 +27,33 @@
     <![endif]-->
 </head>
 <header>
-    <nav>
-
-    </nav>
+    <h1 id="headerTitle">Grandpa's Corner of Guides, Solutions, and Walkthroughs</h1>
+    <div id="navbar">
+        <a class="active" href="javascript:void(0)">Home</a>
+        <a href="javascript:void(0)">Tools</a>
+        <a href="javascript:void(0)">Guides</a>
+        <a href="javascript:void(0)">Troubleshooting</a>
+    </div>
 </header>
 <a id="top"></a>
 <body>
-    <div class ="pageContent">
+    <div class="pageContent">
         <h1>Randall Callihan</h1>
         <p>I'm hosted with GitHub Pages.</p>
     </div>
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
 </body>
 </html>
