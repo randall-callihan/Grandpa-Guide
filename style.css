@@ -20,12 +20,14 @@
 }
 
 /* Body Styles */
-
-/* Footer Styles */
-
 body {
     margin: 0;
     font-size: 28px;
+    font-family: "Raleway", sans-serif;
+}
+
+/* Footer Styles */
+
 }
 
 .header {
