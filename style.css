@@ -1,4 +1,4 @@
-/* Grandpa's Pet Project | Randall Callihan */
+/* "Grandpa's Guide Project" | Randall Callihan */
 
 /*
     --Colors-- 
@@ -8,37 +8,41 @@
     */
 
 /* World Styles */
+h1, h2, h3 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+}
 
 /* Header Styles */
-#headerTitle {
+header {
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
     text-align: center;
-    background-color: lightgray;
-    border-style: solid;
-    border: 5px solid black;
-    margin-top: 0;
-    margin-bottom: 0;
 }
 
 /* Body Styles */
 body {
     margin: 0;
-    font-size: 28px;
+    font-size: 18px;
     font-family: "Raleway", sans-serif;
+    font-weight: 500;
 }
 
 /* Footer Styles */
+footer {
+    
 
 }
 
-.header {
-    background-color: #161F6D;
-    padding: 30px;
-    text-align: center;
+header {
+    box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.75);
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 #navbar {
     overflow: hidden;
     background-color: #161F6D;
+    
 }
 
     #navbar a {
@@ -46,29 +50,39 @@ body {
         display: block;
         color: white;
         text-align: center;
-        padding: 14px 16px;
+        padding: 15px 20px;
         text-decoration: none;
-        font-size: 17px;
+        font-size: 22px;
+        text-shadow: 1px 1px black;
     }
 
         #navbar a:hover {
             background-color: #b3b3b3;
-            color: black;
+            color: white;
+            text-shadow: 1px 1px #161f6d;
+            font-weight: bolder;
         }
 
         #navbar a.active {
             background-color: #00ABE1;
-            color: white;
+            color: black;
+            font-weight: bolder;
+            text-shadow: 1px 1px #161f6d;
         }
 
-.content {
-    padding: 16px;
-}
+            #navbar a.active:hover {
+                color:white;
+            }
+
+            .content {
+                padding: 16px;
+            }
 
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
+    box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.75);
 }
 
     .sticky + .content {
