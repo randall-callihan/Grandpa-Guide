@@ -8,7 +8,9 @@
     */
 
 /* World Styles */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: "Raleway", sans-serif;
     font-weight: 500;
 }
@@ -18,7 +20,62 @@ header {
     border-top: 4px solid black;
     border-bottom: 4px solid black;
     text-align: center;
+    box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.75);
+    font-family: 'Nunito Sans', sans-serif;
 }
+
+/* navbar Styles */
+#navbar {
+    overflow: hidden;
+    background-color: #161F6D;
+
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 22px;
+    text-shadow: 1px 1px black;
+}
+
+#navbar a:hover {
+    background-color: #b3b3b3;
+    color: white;
+    text-shadow: 1px 1px #161f6d;
+    font-weight: bolder;
+}
+
+#navbar a.active {
+    background-color: #00ABE1;
+    color: black;
+    font-weight: bolder;
+    text-shadow: 1px 1px #161f6d;
+}
+
+#navbar a.active:hover {
+    color: white;
+}
+
+.content {
+    padding: 16px;
+}
+
+/* Styles for Sticky navbar */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.75);
+}
+
+.sticky+.content {
+    padding-top: 60px;
+}
+
 
 /* Body Styles */
 body {
@@ -28,61 +85,21 @@ body {
     font-weight: 500;
 }
 
+.wrapper {
+    max-width: 90%;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 /* Footer Styles */
 /* footer { */
 
 
-header {
-    box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.75);
-    font-family: 'Nunito Sans', sans-serif;
-}
-
-#navbar {
-    overflow: hidden;
-    background-color: #161F6D;
-    
-}
-
-    #navbar a {
-        float: left;
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 15px 20px;
-        text-decoration: none;
-        font-size: 22px;
-        text-shadow: 1px 1px black;
+/* media query for a large screen */
+@media (min-width: 1170px) {
+    .wrapper {
+        max-width: 1170px;
     }
-
-        #navbar a:hover {
-            background-color: #b3b3b3;
-            color: white;
-            text-shadow: 1px 1px #161f6d;
-            font-weight: bolder;
-        }
-
-        #navbar a.active {
-            background-color: #00ABE1;
-            color: black;
-            font-weight: bolder;
-            text-shadow: 1px 1px #161f6d;
-        }
-
-            #navbar a.active:hover {
-                color:white;
-            }
-
-            .content {
-                padding: 16px;
-            }
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.75);
 }
-
-    .sticky + .content {
-        padding-top: 60px;
-    }
