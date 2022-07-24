@@ -15,6 +15,10 @@ h3 {
     font-weight: 500;
 }
 
+a {
+    cursor: pointer;
+}
+
 /* Header Styles */
 header {
     border-top: 4px solid black;
@@ -92,6 +96,50 @@ body {
     margin-right: auto;
 }
 
+/* Home Page Styles */
+#pageTitle {
+    padding-top: 16px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 0%;
+}
+
+#pageSubTitle {
+    text-align: center;
+    font-style: italic;
+    margin-top: 0%;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px;
+    border: solid 5px black;
+    /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#toolsColumn {
+    background-color: red;
+}
+
+#guidesColumn {
+    background-color: purple;
+    border-left: 0;
+    border-right: 0;
+}
+
+#troubleshootingColumn {
+    background-color: green;
+}
 
 /* Footer Styles */
 /* footer { */
