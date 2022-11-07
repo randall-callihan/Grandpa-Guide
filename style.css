@@ -110,6 +110,10 @@ body {
     margin-top: 0%;
 }
 
+#homeNote {
+    text-align: center;
+}
+
 /* Create three equal columns that floats next to each other */
 .column {
     float: left;
